@@ -1,0 +1,24 @@
+version: '3.5'
+
+services:
+  vector:
+    image: netflixoss/vector
+    ports:
+      - 8080:80
+    restart: always
+
+  pcp-webapi:
+    image: joshkeegan/pcp-webapi
+    ports:
+      - 44323:44323
+    privileged: true
+    pid: host
+    ipc: host
+    volumes:
+      - /sys:/sys:ro
+      - /etc/localtime:/etc/localtime:ro
+      - /var/lib/docker:/var/lib/docker:ro
+      - /run:/run
+      - /var/log:/var/log
+      - /dev/log:/dev/log
+    restart: always

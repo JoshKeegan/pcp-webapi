@@ -26,6 +26,10 @@ docker run \
     joshkeegan/pcp-webapi
 ```
 
+### With Vector
+This image was made to be used with [Vector](https://github.com/Netflix/vector) (although there's no reason it can't be used by itself).  
+See the [Vector sample](vector-sample/README.md) for instructions.
+
 ## Publishing
 Note: only people authorised to publish to this repo on Docker Hub can publish the image.
 
