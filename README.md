@@ -22,6 +22,7 @@ docker run \
     -v /dev/log:/dev/log \
     --name=pcp-webapi \
     -p 44323:44323 \
+    --restart=always \
     joshkeegan/pcp-webapi
 ```
 
