@@ -1,3 +1,8 @@
+# Deprecated
+Warning: this repo is deprecated and will no longer be maintained.  
+pcp-webapi has been replaced by pmproxy , included in the standard pcp package.
+Examples refer to Netflix's Vector but that is also now deprecated in favour of the Grafana pcp plugin.
+
 # Docker Image: pcp-webapi
 A Docker image for [PCP (Performance Co-Pilot)](https://github.com/performancecopilot/pcp) and its Web API.  
 
